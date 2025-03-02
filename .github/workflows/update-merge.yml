@@ -28,7 +28,7 @@ jobs:
       - name: Approve and merge
         uses: ridedott/merge-me-action@v2
         with:
-          GITHUB_LOGIN: ${{ secrets.GITHUB_APP_NAME }}
+          GITHUB_LOGIN: ${{ secrets.APP_NAME }}
           GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
 
       - name: Delete branch
